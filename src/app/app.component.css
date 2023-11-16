@@ -14,3 +14,10 @@
     margin: 50px auto;
     padding-bottom: 40px;
 }
+
+.demoCard{
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

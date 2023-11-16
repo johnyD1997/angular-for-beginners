@@ -18,6 +18,8 @@ export class CourseCardComponent {
 
  @Output() courseSelected = new EventEmitter<Course>()
 
+
+
   onCourseViewed() {
     console.log("Card component - button clicked ...");
     this.courseSelected.emit(this.course);

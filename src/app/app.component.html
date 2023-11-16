@@ -5,6 +5,26 @@
 
 </div>
 
+<div class="demo">
+  <div class="demoCard">
+  {{title | titlecase }}
+  </div>
+  <div class="demoCard">
+    {{price | currency:'EUR':true:'1.2-2'}}
+  </div>
+  <div class="demoCard">
+    {{startDate | date:'dd MMM yyyy'}}
+  </div>
+  <div class="demoCard">
+    {{rate | percent:'2.2-2'}}
+  </div>
+
+  <div class="demoCard" *ngFor="let pair of course | keyvalue">
+    {{pair.key}}: {{pair.value}}
+  </div>
+
+</div>
+
 <div class="courses">
 
   <app-course-card *ngFor="let course of courses; index as i"
