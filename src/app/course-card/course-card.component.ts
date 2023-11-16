@@ -23,4 +23,8 @@ export class CourseCardComponent {
     this.courseSelected.emit(this.course);
   }
 
+  isImageVisible() {
+    return this.course && this.course.iconUrl;
+  }
+
 }
