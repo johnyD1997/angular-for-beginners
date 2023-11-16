@@ -27,4 +27,9 @@ export class CourseCardComponent {
     return this.course && this.course.iconUrl;
   }
 
-}
+  cardClasses() {
+    return {
+      'beginner': this.course.category === 'BEGINNER',
+      };
+    }
+  }
