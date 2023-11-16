@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { COURSES } from 'src/db-data';
+import { Course } from './course';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-for-beginers';
+  coreCourse = COURSES[0];
+
+  rxjsCourse = COURSES[1];
+
+  ngrxCourse = COURSES[2];
+
+  onCourseSelected(course: Course) {
+    console.log("App component - course card clicked: ", course);
+  }
 }
